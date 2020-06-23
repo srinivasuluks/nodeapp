@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', function (req, res) {
-  var i = 1,
+  var i = 0,
     max = 5;
 
   //set the appropriate HTTP header
