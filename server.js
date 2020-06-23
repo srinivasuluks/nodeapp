@@ -18,10 +18,14 @@ app.get('/', function (req, res) {
   //send multiple responses to the client
   for (; i <= max; i++) 
   {
-	  if (i=0)
+	  if (i<1)
+	  {
 	    res.send('Hello, Welcome to first Srini Jenkinds Docker Apps ! ');
+	  }
 	  else
+	  {
 		res.send('<h1>This is the response Loop Iteration#: ' + i + '</h1>');
+	  }
   }
 });
 
