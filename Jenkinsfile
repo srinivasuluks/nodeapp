@@ -11,12 +11,6 @@ node {
 		app = docker.build("srinivasuluks/nodeapp")
     }
 	
-	stage('Testing Step'){
-	     /* Test Step */
-		app.inside {
-			echo "Test Passed"
-		}
-    }
 
 	stage('Push Image'){
 	     /* Push  Step */
