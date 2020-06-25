@@ -13,8 +13,6 @@ node {
 	stage('Testing Step'){
 	     /* Test Step */
 		 
-		app.inside {
-		}
 		echo "Test Passed"
     }	
 
