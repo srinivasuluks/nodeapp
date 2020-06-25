@@ -13,7 +13,6 @@ node {
 	
 	stage('Testing Step'){
 	     /* Test Step */
-		 
 		app.inside {
 			echo "Test Passed"
 		}
@@ -21,7 +20,6 @@ node {
 
 	stage('Push Image'){
 	     /* Push  Step */
-		 
 		docker.withRegistry('https://registry.hub.docker.com', 'sriniDockerHub') {
 			app.push("${env.BUILD_NUMBER}")
 			app.push("latest")
