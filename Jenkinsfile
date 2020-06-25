@@ -8,7 +8,7 @@ node {
 	
 	stage('Build Step'){
 	     /* Build Step */
-		app = docker.build("srinivasuluks/node-web-app")
+		app = docker.build("srinivasuluks/nodeapp")
     }
 	
 	stage('Testing Step'){
