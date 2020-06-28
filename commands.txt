@@ -1,17 +1,35 @@
-docker build -t srinivasuluks/node-web-app .
+docker rebuild -t srinivasuluks/node-web-app:latest .
+docker run -p 49160:8080 -d srinivasuluks/node-web-app:latest    #to run the container
 
+docker pull nginx:alpine
+
+
+
+
+docker pull srinivasuluks/node-web-app:latest   #PUll latest from DOCKher hubg to loca host
+docker stop <CONTAINER_ID> --> stiop
+
+docker rmi <CONTAINER_ID>   --force		  --> forcefully remove the images
+
+docker run -p 49160:8080 -d srinivasuluks/node-web-app:latest 
+
+docker container prune		# - to removall containers
+
+docker history srinivasuluks/node-web-app:latest
 
 $ docker images
 
-
-docker run -p 49160:8080 -d srinivasuluks/node-web-app
-
+http://localhost:49160/
 # Example
 REPOSITORY                      TAG        ID              CREATED
 node                            12         1934b0b038d1    5 days ago
 <your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
 
 
+
+
+docker run -p 49161:8080 -d srinivasuluks/nodeapp:latest    #to run the container
+http://localhost:49161/
 
 docker run -p 49160:8080 -d <your username>/node-web-app
 https://github.com/srinivasuluks/gitthub2.git
@@ -33,6 +51,9 @@ git push -u origin master
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
+
+git remote add server.js https://github.com/srinivasuluks/github.git
+git push -u server.js master
 
 http://localhost:49160
 
@@ -68,4 +89,3 @@ Date: Mon, 13 Nov 2017 20:53:59 GMT
 Connection: keep-alive
 
 Hello world
-
